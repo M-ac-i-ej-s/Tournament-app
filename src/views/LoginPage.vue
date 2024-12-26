@@ -54,8 +54,8 @@ export default {
     methods: {
         login() {
             if (this.username === '3zjby' && this.password === 'karolToGej') {
-                localStorage.setItem('username', this.username)
-                this.$router.push({ name: 'Home' })
+                localStorage.setItem('user', this.username)
+                this.$router.go({ name: 'Home' })
             } else {
                 toast('Invalid username or password', {
                     type: 'error'
