@@ -10,6 +10,7 @@ import * as directives from 'vuetify/directives'
 
 // Components
 import App from './App.vue'
+import FlagIcon from 'vue-flag-icon'
 
 const vuetify = createVuetify({
   components,
@@ -33,4 +34,4 @@ const vuetify = createVuetify({
   },
 })
 
-createApp(App).use(router).use(vuetify).mount('#app')
+createApp(App).use(router).use(vuetify).use(FlagIcon).mount('#app')

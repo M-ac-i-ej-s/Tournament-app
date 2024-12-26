@@ -1,6 +1,6 @@
 <template>
   <v-app class="page">
-    <router-view />
+    <router-view/>
   </v-app>
 </template>
 
@@ -8,7 +8,12 @@
 import '@mdi/font/css/materialdesignicons.css'
 
 export default {
-  name: 'App'
+  name: 'App',
+  data: () => ({
+    pageWithoutNav: [
+      'Login'
+    ]
+  })
 }
 </script>
 
